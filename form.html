@@ -1,0 +1,126 @@
+<html>
+<head><title>form</title></head>
+<body>
+   <!-- about comments but it is SAMPLE FORM <h3>sample form</sample><div>
+        <form>
+            <fieldset>
+                <legend>general form</legend>
+            <p>
+            <lable>NAME:
+                <input name="name" type=""text" /> </lable>
+                </p>
+                <p>
+                    <lable>age: <input name="age" type="number"/></lable>
+                </p>
+                <p>
+                    <lable> gender:<input name="gender" type="text"/></lable>
+                </p>
+                <p><lable>submit<input type="submit"/></lable>
+                <lable>reset<input type="reset"/></lable></p>
+                </fieldset> </form></div></body></html>-->
+
+<p align="center>"
+    <h4>ABOUT FORMS</h4>
+    <form action="/" method="post" enctype="application" >
+        <fieldset>
+            <legend>
+                persnol details
+            </legend>
+            <p>
+            <label>salutations
+                <select name="salutations">
+                <option>--none--</option>
+            <option value="mr">mrrr.</option>"
+            <option value="ms.">ms.</option>
+            <option>mr. </option>
+            <option>ms.</option>
+            <optiono>dr.</optiono>
+            <option>prof.</option>
+           <option>test.</option>
+           </select></label></p>
+<p>
+    <label>firstname:<input name="firstname" type="text" placeholder="please enter your first name" requried autocapitalize="charecter"/> </lable>
+ </p>          
+<p>
+    <label>lastname:<input name="lastname" type="text" placeholder="please enter your last name"  autofocus required autocapitalize="charecter"/></input></lable>
+</p>
+<p>
+    <label>password:<input name="password" type="text" value="daata already here"  readonly/></label>
+</p>
+<p><label>upload resume:<input name="file" type="file"/></lable>
+</p>
+ </fieldset>
+<fieldset>
+    <legend> profile details</legend>
+    <p>
+        <label >color of profile:
+            <input type="color" name="color"/>
+        </label><br>
+        <label for="range">salary range:
+            <input name ="salary" type="range" min="10" max="100" range="10"/>
+        </label>
+    </p></fieldset>
+<p>
+    <label  for="experience">choose your experience: </label>
+    <input list="experiences" name="experience" id="experience"/>
+    <datalist id="experiences">
+        <option value="fresher"></option>
+        <option value="2 years"></option>
+        <option value="3 years"></option>
+        <option value="more than 10 years"></option>
+        <option value="more than 20 years"></option>
+    </datalist>
+        <button onclick="displaySelectedExperience()">Submit</button>
+
+       <!----<script>
+            function displaySelectedExperience() {
+                const selectedExperience = document.getElementById("experience").value;
+                alert(`You chose: ${selectedExperience}`);
+            }
+        </script>-->
+</p>
+<p>
+    <input type="checkbox" id="frontend" name="frontend"value="FRONTEND">
+    <label for="Frontend">frontend</label><br>
+    <input type ="checkbox" id="backend" name="backend" value="BACKEND">
+    <lable for="Backend">backend</lable><br>
+</p>
+<p>
+    <input type="radio" name="fav_language" id="html"value="html"/>
+    <lable for="html">html</lable><br>
+    <input type="radio" name ="fav_language" id="css" value="css">
+    <lable for="css">css</lable><br>
+    <input type ="radio" name="fav_language" id="javascript" value="javascript">
+    <lable for ="javascript">javascript</lable><br>
+    </p>
+    <p>
+        <lable for="range">A range example</lable>
+        <input type="range" name=" range" id="a" value="50"/> +
+        <input type="number" name="range" id="b" value="25"/> =
+        <output name="x" for="a b" value="75"></output>
+</p>
+GENDER:
+<LABLE for ="gender">
+    <input type="radio" name="gender" value="male"/>male
+</LABLE>
+<lable for="gender">
+    <input type="radio" name="gender" value="female"/>female
+</lable>
+<p>
+    <lable for=""mail">email:
+    <input type="email" name="email" placeholder="enter your email" required ></lable>
+    </p>
+    <p>
+        <labele for="dob">date of birth
+        <input name="birthdate" type="date"/></labele>
+    </p>
+    <p>
+        <lable>Address:<br>
+        <textarea  name="address" cols="30"rows="3"></textarea>
+        </lable>
+    </p>
+<p>
+    <button type="submit">submit</button>
+    <button type="reset">reset</button>
+    </p>
+</p</form></body></html>
